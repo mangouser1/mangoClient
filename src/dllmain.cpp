@@ -2,6 +2,7 @@
 //  - ImGuiのWin32バックエンド/WndProcフックは使わない（クラッシュ要因を排除）
 //  - 入力は GetAsyncKeyState のポーリングのみ（Lで設定、↑↓←→で操作）
 //  - 毎フレームRTVを作って解放、描画ステート(RT)を保存/復元、例外は握りつぶして自動停止
+#define NOMINMAX
 #include <windows.h>
 #include <d3d11.h>
 #include <dxgi1_2.h>
